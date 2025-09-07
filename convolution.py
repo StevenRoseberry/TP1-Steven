@@ -14,7 +14,7 @@ def convolution(original, noyau):
         for j in range(y):
             # prend une région de 3x3
             region = padded[i:i+3, j:j+3]
-            # la ligne 18 est celle qui convolutionne l'image
+            # la ligne 18 est celle qui convolutionne l'image.
             image_convol[i, j] = np.sum(region * noyau)
     return image_convol
 
