@@ -9,7 +9,7 @@ def convolution(original, noyau):
     # padding pour lignes et colonnes
     ## mettre constant_values à 255 pour imiter exemple du prof (padding blanc et non noir)
     padded = np.pad(original, ((1, 1), (1, 1)), mode='constant', constant_values=255)
-    image_convol = np.zeros((y, x), dtype=np.float32)
+    image_convol = np.zeros((x, y), dtype=np.float32)
     for i in range(x):
         for j in range(y):
             # prend une région de 3x3
